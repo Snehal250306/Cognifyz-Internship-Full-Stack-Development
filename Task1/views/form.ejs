@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Internship Registration</title>
+</head>
+<body style="background-color:rgb(240, 167, 248);">
+  <h1 style="color:rgb(97, 3, 144);">Internship Registration</h1>
+  <form action="/submit" method="POST" style="display: flex; flex-direction: column; padding: 20px; border-radius: 20px; position: relative;">
+    <table>
+      <tr><td style="color:rgb(97, 3, 144);" >Full Name:</td><td><input type="text" name="name"  style="border:2px solid rgb(128, 4, 185);" required></td></tr>
+      <tr><td style="color:rgb(97, 3, 144);">Email:</td><td><input type="email" name="email"  style="border:2px solid rgb(128, 4, 185);" required></td></tr>
+      <tr><td style="color:rgb(97, 3, 144);">Contact No:</td><td><input type="tel" name="contact"  style="border:2px solid rgb(128, 4, 185);"required></td></tr>
+      <tr><td style="color:rgb(97, 3, 144);">Date of Birth:</td><td><input type="date" name="dob" id="dob"  style="border:2px solid rgb(128, 4, 185);"required></td></tr>
+      <tr><td style="color:rgb(97, 3, 144);">Gender:</td>
+        <td>
+          <label style="color:rgb(97, 3, 144);"><input type="radio" name="gender" value="Male" required> Male</label>
+          <label style="color:rgb(97, 3, 144);"><input type="radio" name="gender" value="Female" > Female</label>
+        </td>
+      </tr>
+      <tr><td style="color:rgb(97, 3, 144);">College:</td><td><input type="text" name="college" style="border:2px solid rgb(128, 4, 185);" required></td></tr>
+      <tr><td style="color:rgb(97, 3, 144);">Degree:</td><td><input type="text" name="degree"  style="border:2px solid rgb(128, 4, 185);" required></td></tr>
+      <tr><td style="color:rgb(97, 3, 144);">Preferred Domain:</td>
+        <td>
+          <select name="internship"  required>
+            <option>Frontend Development</option>
+            <option>Full stack Development</option>
+            <option>Back End Development</option>
+            <option>Data Science</option>
+            <option>Machine Learning</option>
+            <option>Cyber Security</option>
+          </select>
+        </td>
+      </tr>
+      <tr><td style="color:rgb(97, 3, 144);">Query (if any):</td><td><input type="text" name="query"></td></tr>
+      <tr><td></td><td><button type="submit"  style="border:2px solid rgb(128, 4, 185); background: rebeccapurple; padding: 10px ; border-radius: 10px ; color: aliceblue; font-size: 15px; cursor: pointer; transform: 0.3s ease;">Submit</button></td></tr>
+    </table>
+  </form>
+</body>
+</html>

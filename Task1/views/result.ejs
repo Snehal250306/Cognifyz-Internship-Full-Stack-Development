@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Summary</title>
+</head>
+<body style="background-color:rgb(240, 167, 248);">
+  <h2 style="color:rgb(97, 3, 144);">Thank you, <%= name %>!</h2>
+  <ul>
+    <li style="color:rgb(162, 65, 211);"><strong>Email:</strong> <%= email %></li>
+    <li style="color:rgb(162, 65, 211);"><strong>Contact:</strong> <%= contact %></li>
+    <li style="color:rgb(162, 65, 211);"><strong>DOB:</strong> <%= dob %></li>
+    <li style="color:rgb(162, 65, 211);"><strong>Gender:</strong> <%= gender %></li>
+    <li style="color:rgb(162, 65, 211);"><strong>College:</strong> <%= college %></li>
+    <li style="color:rgb(162, 65, 211);"><strong>Degree:</strong> <%= degree %></li>
+    <li style="color:rgb(162, 65, 211);"><strong>Internship:</strong> <%= internship %></li>
+    <li style="color:rgb(162, 65, 211);"><strong>Query:</strong> <%= query || 'None' %></li>
+  </ul>
+</body>
+</html>
