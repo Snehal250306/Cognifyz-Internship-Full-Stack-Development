@@ -1,0 +1,59 @@
+<%- include('partials/header') %>
+
+<header class="hero text-white text-center d-flex align-items-center">
+  <div class="container">
+    <h1 class="display-4">Hi, I'm Snehal</h1>
+    <p class="lead">Full Stack Developer | Data Analyst</p>
+  </div>
+</header>
+
+<section id="about" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2>About Me</h2>
+    <p>I’m currently pursuing Computer Engineering and working on full-stack and data analytics internships.</p>
+  </div>
+</section>
+
+
+<section id="projects" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Projects</h2>
+    <div class="row g-4">
+<% projects.forEach(project => { %>
+  <div class="col-md-4">
+    <div class="card h-100 shadow">
+      <video class="card-img-top" controls muted autoplay loop>
+        <source src="<%= project.video %>" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="card-body">
+        <h5 class="card-title"><%= project.title %></h5>
+        <p class="card-text"><%= project.description %></p>
+      </div>
+    </div>
+  </div>
+<% }) %>
+    </div>
+  </div>
+</section>
+
+
+<section id="contact" class="bg-dark text-white py-5">
+  <div class="container text-center">
+    <h2>Contact</h2>
+    <p>Email: khodesnehal2503@gmail.com</p>
+ <div class="social-icons mt-3">
+      <a href="www.linkedin.com/in/snehalkhode" target="_blank" class="text-white mx-3 fs-3">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/Snehal250306" target="_blank" class="text-white mx-3 fs-3">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://leetcode.com/u/_snehalll_2526" target="_blank" class="text-white mx-3 fs-3">
+        <i class="fas fa-code"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/footer') %>
